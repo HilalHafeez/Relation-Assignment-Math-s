@@ -20,11 +20,11 @@ int main()
     }
     printf("Enter 1 for relation a[i] divides b[j]\nEnter 2 for relation a[i]=b[j]\nEnter 3 for relation a[i]=square of b[j]\n");
     scanf("%d",&rel);
-    printf("ARB={ ");
      switch(rel)
      {
      //relation A to B, a R b iff a divides b
      case 1:
+	 printf("ARB={ ");
 	    for(i=0;i<n;i++)
 	    {
 		for(j=0;j<m;j++)
@@ -33,9 +33,11 @@ int main()
 		   printf("(%d,%d)",a[i],b[j]);
 		}
 	    }
+	    printf(" }");
      break;
      //relation A to B, a R b iff a=b
      case 2:
+	 printf("ARB={ ");
 	    for(i=0;i<n;i++)
 	    {
 		for(j=0;j<m;j++)
@@ -44,9 +46,11 @@ int main()
 		   printf("(%d,%d)",a[i],b[j]);
 		}
 	    }
+	    printf(" }");
      break;
      //relation A to B, a R b iff a*a=b
      case 3:
+	printf("ARB={ ");
 	    for(i=0;i<n;i++)
 	    {
 		for(j=0;j<m;j++)
@@ -55,10 +59,11 @@ int main()
 		   printf("(%d,%d)",a[i],b[j]);
 		}
 	    }
+	    printf(" }");
      break;
      default:
-	     printf("\tsorry your input is invalid\t");
+	     printf("\tSORRY YOUR INPUT IS INVALID\t");
      }
-     printf(" }");
+     
 getch();
 }
