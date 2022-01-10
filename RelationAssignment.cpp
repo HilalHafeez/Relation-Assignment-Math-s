@@ -45,13 +45,13 @@ int main()
 		}
 	    }
      break;
-     //relation A to B, a R b iff a=b*b
+     //relation A to B, a R b iff a*a=b
      case 3:
 	    for(i=0;i<n;i++)
 	    {
 		for(j=0;j<m;j++)
 		{
-		   if(a[i]==b[j]*b[j])
+		   if(a[i]*a[i]==b[j])
 		   printf("(%d,%d)",a[i],b[j]);
 		}
 	    }
